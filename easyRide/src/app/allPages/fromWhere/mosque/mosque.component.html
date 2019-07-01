@@ -1,0 +1,10 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{name}}</ion-card-title>
+  </ion-card-header>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label> {{address}}</ion-label>
+    <ion-button fill="outline" slot="end" (click)= "select.emit()"> SELECT </ion-button>
+  </ion-item>
+</ion-card>
