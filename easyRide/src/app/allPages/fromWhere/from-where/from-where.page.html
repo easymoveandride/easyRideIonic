@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-searchbar (ionInput)="onSearch($event)" placeholder="Select your mosque"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <app-mosque *ngFor="let mosque of mosqueList; let i = index" (select)="onSelect(mosque.name)" 
+  [name]="mosque.name" [address]="mosque.address">
+  </app-mosque>
+
+</ion-content>

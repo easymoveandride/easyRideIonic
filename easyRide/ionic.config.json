@@ -1,5 +1,7 @@
 {
   "name": "easyRide",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

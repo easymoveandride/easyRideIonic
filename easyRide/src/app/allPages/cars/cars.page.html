@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>cars</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <form [formGroup]="carFormGroup" (submit)="onSubmit()" class="form">
+      <ion-list>
+        <ion-item>
+          <ion-label>Car Description : </ion-label>
+          <ion-input type="text" formControlName="carName" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Number of place : </ion-label>
+          <ion-input type="number" formControlName="numberOfPlaces" ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Departure time : </ion-label>
+          <ion-input type="time" formControlName="departureTime"></ion-input>
+        </ion-item>
+        <ion-button type="submit" shape="round" size="default" color="primary" expand="block">
+          Save
+        </ion-button>
+      </ion-list>
+    </form>
+
+</ion-content>
